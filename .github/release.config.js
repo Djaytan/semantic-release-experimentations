@@ -41,9 +41,7 @@ module.exports = {
     [
       '@semantic-release/exec',
       {
-        successCmd: 'echo "Printing tag version name in temporary file..." && '
-            + `touch '${process.env.TMP_TAG_VERSION_NAME_FILE}' && `
-            + `echo '$\{nextRelease.gitTag}' > '${process.env.TMP_TAG_VERSION_NAME_FILE}'`
+        successCmd: `echo '$\{nextRelease.gitTag}' > '${process.env.TMP_TAG_VERSION_NAME_FILE}'`
       }
     ],
   ]
