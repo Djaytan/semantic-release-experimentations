@@ -63,6 +63,8 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           CHANGELOG_BRANCH_NAME: changelog/${{ steps.release.outputs.tag }}
         run: |
+          echo "${CHANGELOG_FILE}"
+          ls -la docs
           git switch --create "${CHANGELOG_BRANCH_NAME}"
           git commit --message='docs(changelog): release ${{ steps.release.outputs.tag }}' "${CHANGELOG_FILE}"
           git push --set-upstream origin "${CHANGELOG_BRANCH_NAME}"
