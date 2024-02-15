@@ -1,3 +1,15 @@
+## [1.9.0](https://github.com/Djaytan/semantic-release-experimentations/compare/v1.8.0...v1.9.0) (2024-02-15)
+
+
+### 🌟 Features
+
+* **test:** test ([22e7943](https://github.com/Djaytan/semantic-release-experimentations/commit/22e79433f77b7aa7e813567b9704ccba6a906db7))
+
+
+### 📖 Documentation
+
+* **changelog:** release v1.8.0 ([#2](https://github.com/Djaytan/semantic-release-experimentations/issues/2)) ([8d1a72a](https://github.com/Djaytan/semantic-release-experimentations/commit/8d1a72a44bcc3bbb96629b4f8d88075c165e6802))
+
 ## [1.8.0](https://github.com/Djaytan/semantic-release-experimentations/compare/v1.7.0...v1.8.0) (2024-02-15)
 
 
