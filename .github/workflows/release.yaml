@@ -65,6 +65,7 @@ jobs:
         run: |
           echo "${CHANGELOG_FILE}"
           ls -la docs
+          git status
           git switch --create "${CHANGELOG_BRANCH_NAME}"
           git commit --message='docs(changelog): release ${{ steps.release.outputs.tag }}' "${CHANGELOG_FILE}"
           git push --set-upstream origin "${CHANGELOG_BRANCH_NAME}"
