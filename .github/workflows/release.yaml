@@ -134,5 +134,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           CERTIFICATE_IDENTITY: ${{ github.server_url }}/${{ github.workflow_ref }}
-          CERTIFICATE_OIDC_ISSUER: ${{ env.ACTIONS_ID_TOKEN_REQUEST_TOKEN }}
-        run: .github/scripts/sign-gh-release-assets.sh ${{ needs.release-perform.outputs.release-tag }}
+          CERTIFICATE_OIDC_ISSUER: https://token.actions.githubusercontent.com
+        run: .github/scripts/sign_gh_release_assets.sh ${{ needs.release-perform.outputs.release-tag }}
