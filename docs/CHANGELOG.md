@@ -1,3 +1,10 @@
+## [1.14.0](https://github.com/Djaytan/semantic-release-experimentations/compare/v1.13.0...v1.14.0) (2024-02-17)
+
+
+### 🌟 Features
+
+* **test:** test ([d98b345](https://github.com/Djaytan/semantic-release-experimentations/commit/d98b345185335a6e5166af519a807c23d08527a7))
+
 ## [1.9.0](https://github.com/Djaytan/semantic-release-experimentations/compare/v1.8.0...v1.9.0) (2024-02-15)
 
 
