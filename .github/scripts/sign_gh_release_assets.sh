@@ -22,9 +22,7 @@ source "${LIB_FOLDER}/sigstore_file_signer.sh"
 
 validate_git_tag_version() {
   echo 'Checkout Git tag version...'
-  # The following RegEx is based on https://semver.org/#is-there-a-suggested-regular-expression-regex-to-check-a-semver-string
-  # Note the 'v' character at the beginning since we are manipulating Git tags following the format "v<semver>"
-  if [[ ! ("${GIT_TAG_VERSION}" =~ ^v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(-((0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(\.(0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(\+([0-9a-zA-Z-]+(\.[0-9a-zA-Z-]+)*))?$) ]]; then
+  if ! [[ "${GIT_TAG_VERSION}" =~ ^v[0-9]+\.[0-9]+\.[0-9]+.*$ ]]; then
     echo "Error: invalid Git tag version '${GIT_TAG_VERSION}'" >&2
     exit 1
   fi
